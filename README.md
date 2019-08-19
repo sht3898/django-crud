@@ -260,6 +260,8 @@ Article.objects.order_by('-title') # title를 기준으로 오름차순 정렬
 
 
 
+# 내가 작성한 README
+
 ## 가상환경 생성/실행
 
 .gitignore

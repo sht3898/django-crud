@@ -34,3 +34,9 @@ def delete(request):
     }
     article.delete()
     return render(request, 'articles/delete.html', context)
+
+def one(request):
+    return render(request, 'articles/one.html')
+
+def two(request):
+    return render(request, 'articles/two.html')

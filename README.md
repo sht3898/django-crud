@@ -394,5 +394,16 @@ $ python manage.py shell_plus
 
 
 
+```txt
+/articles/new/
+	- form
+
+/articles/create/
+	view
+	- 글저장
+	template
+	- 몇 번째 글이 작성되었습니다.
+```
+
 
 

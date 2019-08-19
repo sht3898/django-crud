@@ -1,8 +1,5 @@
 {% extends 'articles/base.html' %}
 {% block body %}
-<form action="/delete_finish/">
-  <label for="del">삭제할 글 번호 입력: </label>
-  <input id="num" type="text" name="num" placeholder="번호를 입력하세요"><br>
-  <input type="submit" value="완료">
-</form>
+  <h1>{{ num }}번째 글 삭제완료</h1>
+  <a href="/articles/">홈으로</a>
 {% endblock %}

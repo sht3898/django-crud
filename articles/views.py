@@ -26,4 +26,11 @@ def create(request):
     return redirect('/articles/')
 
 def delete(request):
-    return render(request, 'articles/delete.html')
+    num = request.GET.get('num')
+    print(num)
+    article = Article.objects.get(pk=num)
+    context = {
+        'num' : num
+    }
+    article.delete()
+    return render(request, 'articles/delete.html', context)

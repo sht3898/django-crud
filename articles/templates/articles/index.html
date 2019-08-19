@@ -2,7 +2,13 @@
 {% block body %}
   <h1>게시판에 오신것을 환영합니다</h1>
   <a href="/articles/new/">글 작성하기</a>
-  <a href="/articles/delete/">글 삭제하기</a>
+
+  <form action="/articles/delete/">
+    <label for="del">삭제할 글 번호 입력: </label>
+    <input id="num" type="text" name="num" placeholder="번호를 입력하세요">
+    <input type="submit" value="삭제하기">
+  </form>
+
     {% for article in articles %}
     <p>{{ article.pk }}번</p>
     <p>{{ article.title }}</p>

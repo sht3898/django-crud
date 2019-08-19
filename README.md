@@ -2,6 +2,8 @@
 
 > Django ORM을 활용하여 게시판 기능 구현하기
 
+[django model 링크](https://docs.djangoproject.com/en/2.2/ref/models/fields/})
+
 ## 1. 환경설정
 
 * 가상환경(venv)

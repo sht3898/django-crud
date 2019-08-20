@@ -33,15 +33,10 @@ def detail(request, article_pk):
     }
     return render(request, 'articles/detail.html', context)
 
-def delete(request):
-    num = request.GET.get('num')
-    print(num)
-    article = Article.objects.get(pk=num)
-    context = {
-        'num' : num
-    }
+def delete(request, article_pk):
+    article = Article.objects.get(pk=article_pk)
     article.delete()
-    return render(request, 'articles/delete.html', context)
+    return redirect('/articles/')
 
 def one(request):
     return render(request, 'articles/one.html')

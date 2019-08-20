@@ -1,11 +1,40 @@
-{% extends 'articles/base.html' %}  
+{% extends 'articles/base.html' %}
+{% block css %}
+<style>
+  #document {
+    margin-top: 10px;
+  }
+  #title {
+    width : 100%;
+    margin-bottom: 10px;
+  }
+  #content {
+    width : 100%;
+    height : 300px;
+    margin-bottom : 10px;
+  }
+</style>
+{% endblock %}
 {% block body %}
-<h1>글 작성하기</h1>
+<h1 id="document">글 작성하기</h1>
 <form action="/articles/create/">
+  <div class="form-group">
+    <label for="exampleInputEmail1">제목</label>
+    <input type="title" name="title" class="form-control" id="title" aria-describedby="emailHelp" placeholder="제목을 입력해주세요">
+    <small id="emailHelp" class="form-text text-muted">글의 내용을 작성해주세요.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">내용</label>
+    <input type="content" name="content" class="form-control" id="content" placeholder="내용">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% comment %} <form action="/articles/create/">
   <label for="title">제목 : </label>
   <input id="title" type="text" name="title" placeholder="제목을 입력하세요"><br>
   <label for="content">내용 : </label>
   <textarea name="content" id="content" placeholder="내용을 입력하세요"></textarea>
   <input type="submit" value="작성하기">
-</form>
+</form> {% endcomment %}
 {% endblock %}

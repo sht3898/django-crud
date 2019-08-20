@@ -435,4 +435,16 @@ $ python manage.py shell_plus
 
 
 
+## 기타 팁
+
 Django 패키지 => 코드를 더 편하게 사용할 수 있음
+
+Ctrl + , > emmet > Emmet.Include Language > Edit in settings.json > 밑의 것 추가
+
+```python
+...
+"emmet.includeLanguages": {
+        "django-html" : "html"
+    }
+```
+

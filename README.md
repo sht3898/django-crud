@@ -432,3 +432,7 @@ $ python manage.py shell_plus
 ## Migrations
 
 모델의 변경 사항들을 관리한다 생각하면 좋음. Migrate 될 때 반영된다.
+
+
+
+Django 패키지 => 코드를 더 편하게 사용할 수 있음

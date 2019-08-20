@@ -12,6 +12,7 @@
     {% for article in articles %}
     <p>{{ article.id }}번</p>
     <p>{{ article.title }}</p>
+    <p>{{ article.content }}</p>
     <p>{{ article.created_at }}</p>
     <a href="/articles/{{ article.pk }}">글 보러가기</a>
     <hr>

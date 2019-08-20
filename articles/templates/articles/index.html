@@ -10,9 +10,10 @@
   </form>
 
     {% for article in articles %}
-    <p>{{ article.pk }}번</p>
+    <p>{{ article.id }}번</p>
     <p>{{ article.title }}</p>
     <p>{{ article.created_at }}</p>
+    <a href="/articles/{{ article.pk }}">글 보러가기</a>
     <hr>
   {% endfor %}
 {% endblock %}

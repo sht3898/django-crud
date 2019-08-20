@@ -411,3 +411,24 @@ $ python manage.py shell_plus
 
 
 
+## MVC vs MTV
+
+* MVC
+
+  Model
+
+  View
+
+  Controller
+
+* MTV (Django에서 많이 표현)
+
+  Model
+
+  Template
+
+  View
+
+## Migrations
+
+모델의 변경 사항들을 관리한다 생각하면 좋음. Migrate 될 때 반영된다.
